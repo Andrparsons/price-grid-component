@@ -1,6 +1,7 @@
 :root {
   /* Primary Colours */
   --cyan: hsl(179, 62%, 43%);
+  --light-cyan: hsl(179, 55%, 52%);
   --bright-yellow: hsl(71, 73%, 54%);
 
   /* Neutral Colours */
@@ -8,8 +9,38 @@
   --grayish-blue: hsl(218, 22%, 67%);
 }
 
+/* this is just to center the component */
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
 /* Pricing Module */
 
 .pricing {
   font-family: "Karla", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 40rem;
+}
+
+.pricing-intro {
+  width: 100%;
+  background-color: #fff;
+}
+
+.pricing-signup {
+  flex: 1;
+  background-color: var(--cyan);
+}
+
+.pricing-features {
+  flex: 1;
+  background-color: var(--light-cyan);
 }
