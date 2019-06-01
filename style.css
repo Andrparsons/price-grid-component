@@ -8,6 +8,9 @@
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
 }
+* {
+  margin: 0;
+}
 
 /* this is just to center the component */
 .center {
@@ -27,20 +30,52 @@ body {
   font-family: "Karla", sans-serif;
   display: flex;
   flex-wrap: wrap;
-  max-width: 40rem;
+  max-width: 39.5rem;
 }
+
+.pricing h2 {
+  font-size: 1.11rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Intro */
 
 .pricing-intro {
   width: 100%;
   background-color: #fff;
 }
 
+.pricing-intro h1 {
+  color: var(--cyan);
+  font-size: 1.475rem;
+  margin: 1.5rem 0 1.75rem;
+}
+
+.pricing-intro h2 {
+  color: var(--bright-yellow);
+}
+
+.pricing-intro p {
+  font-size: 0.97rem;
+  color: var(--grayish-blue);
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+/* Signup */
+
 .pricing-signup {
   flex: 1;
   background-color: var(--cyan);
 }
 
+/* Features */
+
 .pricing-features {
   flex: 1;
   background-color: var(--light-cyan);
+}
+
+.card-section {
+  padding: 1rem 2.5rem;
 }
