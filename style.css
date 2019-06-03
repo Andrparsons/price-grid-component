@@ -48,7 +48,7 @@ body {
 .pricing-intro h1 {
   color: var(--cyan);
   font-size: 1.475rem;
-  margin: 1.5rem 0 1.75rem;
+  margin: 0 0 1.5rem;
 }
 
 .pricing-intro h2 {
@@ -59,7 +59,6 @@ body {
   font-size: 0.97rem;
   color: var(--grayish-blue);
   line-height: 1.75;
-  margin-bottom: 1.2rem;
 }
 
 /* Signup */
@@ -67,6 +66,36 @@ body {
 .pricing-signup {
   flex: 1;
   background-color: var(--cyan);
+}
+
+.pricing-signup p {
+  margin-bottom: 2rem;
+}
+
+.pricing-signup button {
+  width: 100%;
+  background-color: var(--bright-yellow);
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.price {
+  margin-bottom: 0.5rem;
+}
+
+.price-highlight {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.price-lowlight {
+  opacity: 0.75;
+  position: relative;
+  top: -0.3rem;
 }
 
 /* Features */
@@ -77,5 +106,6 @@ body {
 }
 
 .card-section {
-  padding: 1rem 2.5rem;
+  padding: 2.45rem;
+  color: var(--light-gray);
 }
