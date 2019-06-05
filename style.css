@@ -31,6 +31,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 39.5rem;
+  box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.16),
+    0 0.1875rem 0.375rem rgba(0, 0, 0, 0.23);
+  border-radius: 0.5rem;
 }
 
 .pricing h2 {
@@ -43,6 +46,7 @@ body {
 .pricing-intro {
   width: 100%;
   background-color: #fff;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .pricing-intro h1 {
@@ -66,6 +70,7 @@ body {
 .pricing-signup {
   flex: 1;
   background-color: var(--cyan);
+  border-bottom-left-radius: 0.5rem;
 }
 
 .pricing-signup p {
@@ -111,6 +116,7 @@ body {
 .pricing-features {
   flex: 1;
   background-color: var(--light-cyan);
+  border-bottom-right-radius: 0.5rem;
 }
 
 .pricing-features ul {
@@ -124,4 +130,61 @@ body {
 .card-section {
   padding: 2.45rem;
   color: var(--light-gray);
+}
+
+/* Phones */
+
+@media screen and (max-width: 599px) {
+  .card-section {
+    padding: 1.5rem 1.45rem;
+  }
+
+  .center {
+    padding: 4.5rem 2rem;
+    height: auto;
+  }
+
+  /* Intro */
+
+  .pricing-intro {
+    border-radius: 0.25rem 0.25rem 0 0;
+    padding: 1.875rem 1.45rem 2.15rem;
+  }
+
+  .pricing-intro h1 {
+    font-size: 1.24rem;
+  }
+
+  .pricing-intro h2 {
+    font-size: 0.925rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.3;
+  }
+
+  .pricing-intro p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+  }
+
+  /* Signup */
+
+  .pricing-signup {
+    border-radius: 0;
+    width: 100%;
+    flex: 0 1 auto;
+  }
+
+  .pricing-signup h2 {
+    margin-bottom: 1.1rem;
+  }
+
+  .pricing-signup button {
+    padding: 0.9rem 0;
+  }
+
+  /* Features */
+
+  .pricing-features {
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
 }
